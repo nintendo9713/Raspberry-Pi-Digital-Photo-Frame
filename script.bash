@@ -1,4 +1,5 @@
 #!/bin/bash
+
 #slideshow script
 
 cd /home/pi/pics/
@@ -7,13 +8,6 @@ cd /home/pi/pics/
 
 export DISPLAY=:0.0
 
-qiv -f -R -t -i -m -T /home/pi/pics/jamie.jpg &
+qiv -f -R -s -r -d 10 -t -i -m -T /home/pi/pics/*.jpg
 
-experiment
-funtion experiment{
-  while true; do
-   sudo wget http://site.com/image.jpg
-   sudo mv jamie.jpg.1 jamie.jpg
-    sleep 3600
-  done
-}
+# Originally pulled a picture from my website to add but the Pi had an unreliable internet connection
