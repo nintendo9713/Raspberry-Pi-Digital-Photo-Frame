@@ -33,4 +33,4 @@ fi
 
 export DISPLAY=:0.0
 i=$(< i.txt)
-qiv -f -R -t -i -m -T /home/pi/pics/jamie.jpg & experiment
+qiv -f -R -s -r -d 10 -t -i -m -T /home/pi/pics/*.jpg & experiment
